@@ -1,0 +1,1 @@
+{"token_data":{"appId":"09e285e6f74a434f9347bf2e1acab746","packageName":"com.dami.fileexplorer","suit":2561},"signature_alg":"sm2WithSm3","signature":"ndzZR+Kc2kodro4T/P3vWaxKEtqumnaykj0H8mtO79cERo3JAIsqNhMLb7DwsJ4RLp2BOu5VjjgyuCXixAel4Q=="}

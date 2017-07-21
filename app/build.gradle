@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        applicationId "com.dami.fileexplorer"
+        minSdkVersion 23
+        targetSdkVersion 23
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file('E:/Code/Signature/Debug_sys.jks')
+            storePassword '123456'
+            keyAlias 'Debug'
+            keyPassword '123456'
+        }
+        debug {
+            storeFile file('E:/Code/Signature/Debug_sys.jks')
+            storePassword '123456'
+            keyAlias 'Debug'
+            keyPassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    compileOnly files('libs/framework.jar')
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile files('libs/android-support-v13.jar')
+    compile files('libs/ckms-opcode-1.0.3.jar')
+    compile files('libs/securitysdk-v2--standard-3.8.18.2393.jar')
+    compile files('libs/xdja-auth-1.0.1.jar')
+}

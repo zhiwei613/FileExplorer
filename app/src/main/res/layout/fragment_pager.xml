@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical"	
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<android.support.v4.view.ViewPager
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_above="@+id/home_group"/>
+	
+	<TextView 
+	    android:textSize="30sp"
+	    android:textColor="#ffffffff"
+	    android:gravity="center"
+	    android:id="@+id/tv_test"
+	    android:background="#ff000000"
+	    android:visibility="gone"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"/>
+	
+	<RadioGroup 
+	    android:orientation="horizontal"
+	    android:id="@+id/home_group"
+	    android:background="#fffffbff"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerVertical="true">
+	    
+	    <RadioButton 
+	        android:textColor="@color/mainradio_textcolor"
+	        android:id="@+id/home_radio_one"
+	        android:checked="true"
+	        android:text="@string/tab_category"
+	        android:drawableTop="@drawable/tab_category"
+	        style="@style/MMTabButton"/>
+	    
+	    <RadioButton 
+	        android:textColor="@color/mainradio_textcolor"
+	        android:id="@+id/home_radio_two"
+	        android:text="@string/tab_sd"
+	        android:drawableTop="@drawable/tab_file"
+	        style="@style/MMTabButton"/>
+	    	    
+	    <RadioButton 
+	        android:textColor="@color/mainradio_textcolor"
+	        android:id="@+id/home_radio_three"
+	        android:text="@string/tab_remote"
+	        android:drawableTop="@drawable/tab_remote"
+	        style="@style/MMTabButton"/>    
+	</RadioGroup>
+</RelativeLayout>
+
+

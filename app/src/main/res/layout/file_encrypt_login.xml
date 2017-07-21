@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+  	
+    <ScrollView 
+        android:id="@+id/safebox_password_and_question_setting_scrollview" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        
+        <LinearLayout 
+            android:orientation="vertical" 
+            style="@style/safeboxFormContainer">
+            
+            <LinearLayout 
+                android:gravity="center" 
+                android:orientation="horizontal" 
+                android:id="@+id/safebox_password_login_edit_layout" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">
+                
+                <EditText 
+                    android:id="@+id/safebox_password_login" 
+                    android:layout_width="0.0dip" 
+                    android:layout_height="wrap_content" 
+                    android:hint="@string/password_setting_hint"
+                    android:maxLines="1" 
+                    android:password="true" 
+                    android:singleLine="true" 
+                    android:layout_weight="9.0" 
+                    android:inputType="phone|textPassword" 
+                    style="@style/safebox_edit_content" />
+                
+                <ImageButton 
+                    android:id="@+id/display_password_login_btn" 
+                    android:background="@android:color/transparent" 
+                    android:layout_width="0.0dip" 
+                    android:layout_height="wrap_content" 
+                    android:src="@drawable/ic_password_invisible" 
+                    android:layout_weight="1.0" 
+                    android:layout_alignParentRight="true" 
+                    android:layout_centerVertical="true" />
+                
+            </LinearLayout>
+            
+            <TextView 
+                android:layout_gravity="left" 
+                android:id="@+id/safebox_password_forget" 
+                android:visibility="gone" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/password_login_forget" 
+                android:maxLines="1" 
+                android:singleLine="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/safebox_password_login_edit_layout"
+            android:layout_marginTop="390.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:id="@+id/safebox_password_cancel_btn"
+                android:text="@string/password_setting_cancel"
+                style="@style/SafeBoxButtonStyle2" />
+            <Button 
+                android:gravity="center"
+                android:layout_marginLeft="30.0dip"
+                android:id="@+id/safebox_password_login_btn"
+                android:text="@string/password_setting_complete" 
+                style="@style/SafeBoxButtonStyle2" />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</merge>

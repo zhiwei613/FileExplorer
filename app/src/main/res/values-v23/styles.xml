@@ -1,0 +1,16 @@
+<resources>
+
+    <!--
+        Base application theme for API 23+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 23+ devices.
+    -->
+    <style name="ActionBarStyle" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:background">@color/actionbar_color</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:checkBoxPreferenceStyle">@style/Freeme_CheckBoxPreference</item>
+        <item name="android:actionModeStyle">@style/ActionBarStyle</item>
+        <item name="android:colorPrimary">@color/actionbar_color</item>
+    </style>
+</resources>

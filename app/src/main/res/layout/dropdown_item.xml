@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:gravity="center_vertical" 
+	android:orientation="horizontal" 
+	android:id="@+id/list_item" 
+	android:background="@drawable/dropdown_item_bg" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <ImageView 
+		android:id="@+id/item_icon" 
+		android:paddingLeft="@dimen/storage_volume_item_icon_paddingleft" 
+		android:paddingRight="@dimen/storage_volume_item_icon_paddingright" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:scaleType="fitCenter" />
+		
+    <TextView 
+		android:textAppearance="?android:textAppearanceSmall" 
+		android:gravity="center_vertical" 
+		android:id="@+id/path_name" 
+		android:layout_width="wrap_content" 
+		android:layout_height="@dimen/storage_volume_item_line_height" 
+		android:singleLine="true" />
+		
+    <TextView 
+		android:layout_width="0.0dip" 
+		android:layout_height="wrap_content" 
+		android:layout_weight="1.0" />
+		
+    <ImageView 
+		android:id="@+id/unmount_btn" 
+		android:paddingLeft="@dimen/storage_volume_item_icon_paddingleft" 
+		android:paddingRight="@dimen/storage_volume_item_icon_paddingright" 
+		android:visibility="gone" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:src="@drawable/storage_unmount" />
+</LinearLayout>

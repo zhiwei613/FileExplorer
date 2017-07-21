@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group_item_names">
+        <item>System Caches</item>
+        <item>Thumnail Caches</item>
+        <item>App caches</item>
+        <item>Empty folders</item>
+        <item>App Residual</item>
+    </string-array>
+    <string-array name="sort_by">
+        <item>Type</item>
+        <item>Name (A - Z)</item>
+        <item>Size (big - small)</item>
+        <item>Time (new - old)</item>
+    </string-array>
+</resources>

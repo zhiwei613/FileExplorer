@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file_browse_frame" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+   <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="0dip" 
+        android:layout_weight="1">
+        <ListView android:id="@+id/file_path_list"
+            android:visibility="gone"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+		
+        <LinearLayout android:id="@+id/category_page"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout android:id="@+id/category_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <LinearLayout android:id="@+id/category_encrypt_music"
+                        style="@style/CategoryButtonStyle">
+                        <ImageView android:src="@drawable/category_icon_music"
+                            style="@style/CategoryButtonIconStyle" />
+                        <TextView android:text="@string/category_music"
+                            style="@style/CategoryButtonTextStyle" />
+                        <TextView android:id="@+id/category_encrypt_music_count"
+                            style="@style/CategoryButtonCountTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/category_encrypt_video"
+                        style="@style/CategoryButtonStyle">
+                        <ImageView android:src="@drawable/category_icon_video"
+                            style="@style/CategoryButtonIconStyle" />
+                        <TextView android:text="@string/category_video"
+                            style="@style/CategoryButtonTextStyle" />
+                        <TextView android:id="@+id/category_encrypt_video_count"
+                            style="@style/CategoryButtonCountTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/category_encrypt_picture"
+                        style="@style/CategoryButtonStyle">
+                        <ImageView android:src="@drawable/category_icon_picture"
+                            style="@style/CategoryButtonIconStyle" />
+                        <TextView android:text="@string/category_picture"
+                            style="@style/CategoryButtonTextStyle" />
+                        <TextView android:id="@+id/category_encrypt_picture_count"
+                            style="@style/CategoryButtonCountTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <LinearLayout android:id="@+id/category_encrypt_apk"
+                        style="@style/CategoryButtonStyle">
+                        <ImageView android:src="@drawable/category_icon_apk"
+                            style="@style/CategoryButtonIconStyle" />
+                        <TextView android:text="@string/category_apk"
+                            style="@style/CategoryButtonTextStyle" />
+                        <TextView android:id="@+id/category_encrypt_apk_count"
+                            style="@style/CategoryButtonCountTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/category_encrypt_doc"
+                        style="@style/CategoryButtonStyle">
+                        <ImageView android:src="@drawable/category_icon_document"
+                            style="@style/CategoryButtonIconStyle" />
+                        <TextView android:text="@string/category_document"
+                            style="@style/CategoryButtonTextStyle" />
+                        <TextView android:id="@+id/category_encrypt_doc_count"
+                            style="@style/CategoryButtonCountTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/category_encrypt_other"
+                        style="@style/CategoryButtonStyle">
+                        <ImageView android:src="@drawable/category_other_button"
+                            style="@style/CategoryButtonIconStyle" />
+                        <TextView android:text="@string/category_other"
+                            style="@style/CategoryButtonTextStyle" />
+                        <TextView android:id="@+id/category_encrypt_other_count"
+                            style="@style/CategoryButtonCountTextStyle" />
+                    </LinearLayout>                    
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+	
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#DCDCDC"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <FrameLayout 
+        android:gravity="center" 
+        android:focusable="false" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:layout_weight="0.2" >
+
+        <RadioButton
+            android:id="@+id/password_setting_btn"
+            android:layout_gravity="center" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_menu_setting"
+            android:text="@string/encrypt_password_modify_btn_text"
+            android:textColor="@color/mainradio_textcolor" />
+        
+         <RadioButton
+            android:id="@+id/encrypt_btn"
+            android:layout_gravity="center" 
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_menu_encrypt"
+            android:text="@string/decrypt_btn_text"
+            android:textColor="@color/mainradio_textcolor" />
+      
+    </FrameLayout>		
+</LinearLayout>
